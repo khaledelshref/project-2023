@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protein Calculator</title>
+    <link rel="shortcut icon" type="images" href="./logo.jpg"> <!-- link logo -->
+    <link rel="stylesheet" href="./protein.css"><!-- link css to html -->
+</head>
+<body>
+    <div class="header">
+    <div class="calculator">
+        <h1>Protein Calculator</h1>
+        <form id="calculator-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" step="0.1" required>
+            <label for="activity-level">Activity Level:</label>
+            <select id="activity-level" required>
+                <option value="" disabled selected>Select your activity level</option>
+                <option value="0.8">Sedentary</option>
+                <option value="1.2">Lightly Active</option>
+                <option value="1.5">Moderately Active</option>
+                <option value="1.8">Highly Active</option>
+            </select>
+            <div id="result"></div>
+            <button id="calculate" type="submit">Calculate</button><!-- to Calculate -->
+            <button type="reset" id="reset">Reset</button><!-- to reset the Calculator -->
+        </form>
+    </div>
+    </div>
+    <script src="protein.js"></script><!-- link js  -->
+</body>
+</html>
